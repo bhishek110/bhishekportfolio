@@ -1,0 +1,306 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background: url(contact-background.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+#sidebar-close {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  transition: all .15s;
+}
+
+#sidebar-close:hover {
+  transform: scale(1.2, 1.2);
+  transition: all .15s;
+}
+
+#sidebar-close:active {
+  transform: scale(1, 1);
+  transition: all .15s;
+}
+
+#sidebar-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 130px;
+}
+
+.side-bar {
+  width: 40%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  left: -41%;
+  transition: all .5s;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.sidebar-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#app-1,
+#app-2 {
+  font-size: 20px;
+  transition: all .15s;
+}
+
+#app-3 {
+  font-size: 18px;
+  transition: all .15s;
+}
+
+#app-1:hover,
+#app-2:hover {
+  transform: scale(1.3, 1.3);
+  transition: all .15s;
+}
+
+#app-3:hover {
+  transform: scale(1.3, 1.3);
+  transition: all .15s;
+}
+
+@media screen and (min-width: 700px) {
+  #menu-icon{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .side-bar {
+    left: -41%;
+  }
+
+  .menu{
+    display: none;
+  }
+}
+
+.side-tab {
+  display: flex;
+  justify-content: center;
+  margin: 30px 30px;
+}
+
+#menu-icon {
+  margin: 0px 0px 0px 10px;
+  padding: 0px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all .15s;
+}
+
+#menu-icon:hover {
+  transform: scale(1.2, 1.2);
+  transition: all .15s;
+}
+
+#menu-icon:active {
+  transform: scale(1, 1);
+  transition: all .15s;
+}
+
+
+.menu-tab {
+  margin: 0px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.resume {
+  margin-right: 10px;
+  background: url(contact-background.jpg);
+  background-size: cover;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1.5px solid white;
+  transition: all .15s;
+}
+
+.resume:hover {
+  transform: scale(1.05, 1.05);
+  transition: all .15s;
+}
+
+.resume:active {
+  transform: scale(1, 1);
+  transition: all .15s;
+}
+
+.main-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.name-container, .mail-mob{
+  margin-left: 8px;
+}
+
+.name-container input {
+  margin: 20px 10px 3px 10px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  outline: none;
+  cursor: pointer;
+  transition: all .15s;
+}
+
+.name-container input:hover {
+  transform: scale(1.03, 1.03);
+  transition: all .15s;
+}
+
+.mail-mob input {
+  margin: 20px 10px 3px 10px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  outline: none;
+  cursor: pointer;
+  transition: all .15s;
+}
+
+.mail-mob input:hover {
+  transform: scale(1.03, 1.03);
+  transition: all .15s;
+}
+
+.mail-mob input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.description textarea {
+  margin: 20px 15px 10px 15px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  outline: none;
+  resize: none;
+  cursor: pointer;
+  transition: all .15s;
+}
+
+.description textarea:hover {
+  transform: scale(1.03, 1.03);
+  transition: all .15s;
+}
+
+textarea::-webkit-scrollbar {
+  background: url(contact-background.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  color: rgb(255, 32, 255);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: url(contact-background.jpg);
+  background-size: cover;
+  padding: 5px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1.5px solid white;
+  transition: all .15s;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.btn:hover {
+  transform: scale(1.05, 1.05);
+  transition: all .15s;
+}
+
+.btn:active {
+  transform: scale(1, 1);
+  transition: all .15s;
+}
+
+.social-media {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 15px;
+}
+
+.app-1,
+.app-2 {
+  font-size: 20px;
+  transition: all .15s;
+}
+
+.app-1:hover, .app-2:hover{
+  transform: scale(1.3,1.3);
+  transition: all .15s;
+}
+
+.app-3 {
+  font-size: 18px;
+  transition: all .15s;
+}
+
+.app-3:hover{
+  transform: scale(1.3,1.3);
+  transition: all .15s;
+}

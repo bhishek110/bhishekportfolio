@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="08-contact.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <div class="side-bar">
+    <h1><i id="sidebar-icon" class="fa-solid fa-circle-user"></i></h1>
+    <h1><i id="sidebar-close" onclick="sidebarClose()" class="fa-solid fa-xmark"></i></h1>
+    <a class="side-tab" href="01-home.html">Home</a>
+    <a class="side-tab" href="03-about.html">About</a>
+    <a class="side-tab" href="05-portfolio.html">Portfolio</a>
+    <a class="side-tab" href="07-contact.html" style="color: rgb(255, 42, 255)">CONTACT</a>
+
+    <p class="sidebar-media">
+      <a id="app-1" target="_blank" href="https://www.instagram.com/https_bhi/"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a id="app-2" target="_blank" href="https://www.linkedin.com/in/bhishek110"><i
+          class="fa-brands fa-linkedin"></i></a>
+      <a id="app-3" target="_blank" href="https://github.com/bhishek110"><i class="fa-brands fa-github"></i></a>
+    </p>
+  </div>
+
+  <div class="header">
+    <p class="user"><i id="menu-icon" onclick="sidebarVisible()" class="fa-solid fa-circle-user"></i>Abhishek</p>
+    <nav class="menu">
+      <a class="menu-tab" href="01-home.html">Home</a>
+      <a class="menu-tab" href="03-about.html">About</a>
+      <a class="menu-tab" href="05-portfolio.html">Portfolio</a>
+      <a class="menu-tab" href="07-contact.html" style="color: rgb(255, 42, 255)">CONTACT</a>
+    </nav>
+
+    <a target="_blank" href="09-resume.html"><button class="resume">Resume</button></a>
+  </div>
+
+  <div class="main-container">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <div class="name-container">
+        <h1 class="heading">Contact</h1>
+        <input type="hidden" name="access_key" value="8246673c-e9ff-46a4-859c-1e49e6586861">
+        <input name="Firstname" type="text" placeholder="Firstname" required>
+        <input name="Lastname" type="text" placeholder="Lastname">
+      </div>
+
+      <div class="mail-mob">
+        <input name="E-mail" type="email" placeholder="E-mail" required>
+        <input name="Phone Number" type="number" placeholder="Mobile">
+      </div>
+
+      <div class="description">
+        <textarea name="Message" cols="54" rows="6" placeholder="Type your message here ..." required></textarea>
+      </div>
+      <div class="btn-container">
+        <button class="btn" type="submit">Send</button>
+      </div>
+
+      <p class="social-media">
+        <a class="app-1" target="_blank" href="https://www.instagram.com/https_bhi/"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a class="app-2" target="_blank" href="https://www.linkedin.com/in/bhishek110"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a class="app-3" target="_blank" href="https://github.com/bhishek110"><i class="fa-brands fa-github"></i></a>bhishek110@gmail.com
+      </p>
+    </form>
+  </div>
+</body>
+
+</html>
+
+<script>
+  var sidebar = document.querySelector(".side-bar")
+
+  function sidebarVisible() {
+    sidebar.style.left = "0%"
+  }
+
+  function sidebarClose() {
+    sidebar.style.left = "-41%"
+  }
+
+  document.oncontextmenu = () => {
+    return false;
+  }
+
+  document.onkeydown = e => {
+    if (e.key == "F12") {
+      return false;
+    }
+
+    if(e.ctrlKey && e.key == "u"){
+      return false;
+    }
+  }
+</script>
