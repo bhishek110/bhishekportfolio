@@ -262,7 +262,7 @@ textarea::placeholder {
 
 @media screen and (max-width: 700px) {
 #enter {
-    width: 170px;
+    width: 175px;
   } 
 }
 
