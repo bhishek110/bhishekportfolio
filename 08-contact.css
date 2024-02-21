@@ -163,7 +163,7 @@ a {
 
 .main-container {
   display: block;
-  width: 440px;
+  width: 420px;
   position: absolute;
   top: 55%;
   left: 50%;
@@ -173,7 +173,7 @@ a {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.heading{
+.heading {
   display: flex;
   justify-content: center;
 }
@@ -252,7 +252,12 @@ textarea::placeholder {
 .mail-mob,
 .name-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.mail-mob,
+.name-container {
+  gap: 20px;
 }
 
 .btn {
