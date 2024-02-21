@@ -105,6 +105,10 @@ body {
   .menu {
     display: none;
   }
+
+  input{
+    display: block;
+  }
 }
 
 .side-tab {
