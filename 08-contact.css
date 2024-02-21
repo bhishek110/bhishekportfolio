@@ -61,7 +61,7 @@ body {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.sidebar-media{
+.sidebar-media {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +91,7 @@ body {
 }
 
 @media screen and (min-width: 700px) {
-  #menu-icon{
+  #menu-icon {
     display: none;
   }
 }
@@ -102,11 +102,11 @@ body {
     left: -41%;
   }
 
-  .menu{
+  .menu {
     display: none;
   }
 
-  input{
+  input {
     display: block;
   }
 }
@@ -181,10 +181,6 @@ a {
   justify-content: center;
 }
 
-.name-container, .mail-mob{
-  margin-left: 8px;
-}
-
 .name-container input {
   margin: 20px 10px 3px 10px;
   padding: 5px;
@@ -223,7 +219,7 @@ a {
 
 .description textarea {
   display: block;
-  margin: 20px 15px 10px 15px;
+  margin: 20px 10px 10px 10px;
   padding: 5px;
   border: none;
   background-color: transparent;
@@ -254,7 +250,10 @@ textarea::placeholder {
   color: white;
 }
 
-.btn-container{
+.btn-container,
+.description,
+.mail-mob,
+.name-container {
   display: flex;
   justify-content: center;
 }
@@ -296,8 +295,9 @@ textarea::placeholder {
   transition: all .15s;
 }
 
-.app-1:hover, .app-2:hover{
-  transform: scale(1.3,1.3);
+.app-1:hover,
+.app-2:hover {
+  transform: scale(1.3, 1.3);
   transition: all .15s;
 }
 
@@ -306,7 +306,7 @@ textarea::placeholder {
   transition: all .15s;
 }
 
-.app-3:hover{
-  transform: scale(1.3,1.3);
+.app-3:hover {
+  transform: scale(1.3, 1.3);
   transition: all .15s;
 }
