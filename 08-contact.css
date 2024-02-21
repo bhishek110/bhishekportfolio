@@ -162,7 +162,8 @@ a {
 }
 
 .main-container {
-  width: 420px;
+  display: block;
+  width: 440px;
   position: absolute;
   top: 55%;
   left: 50%;
