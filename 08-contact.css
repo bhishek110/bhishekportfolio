@@ -105,10 +105,6 @@ body {
   .menu {
     display: none;
   }
-
-  input {
-    display: block;
-  }
 }
 
 .side-tab {
@@ -166,7 +162,7 @@ a {
 }
 
 .main-container {
-  width: 90%;
+  width: 420px;
   position: absolute;
   top: 55%;
   left: 50%;
