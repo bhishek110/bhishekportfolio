@@ -141,9 +141,16 @@ a {
 }
 
 .header h1 {
+  display: flex;
+  justify-content: center;
   color: rgb(255, 176, 48);
-  margin-left: 200px;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 700px) {
+  .header h1{
+    margin-right: 20px;
+  }
 }
 
 .main-container h1 {
