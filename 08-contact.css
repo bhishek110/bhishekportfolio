@@ -11,6 +11,14 @@ body {
   background-repeat: repeat;
 }
 
+@media screen and (max-width: 700px) {
+  body {
+    background: url(contact-background-portrait.png);
+    background-size: cover;
+    background-repeat: repeat;
+  }
+}
+
 .user {
   display: flex;
   align-items: center;
