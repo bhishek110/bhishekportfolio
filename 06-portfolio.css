@@ -169,7 +169,7 @@ a {
   transition: all .15s;
 }
 
-.main-container h1{
-  margin: 50px 70px;
+.main-container marquee {
+  margin: 50px;
   font-size: 40px;
 }
