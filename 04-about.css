@@ -11,6 +11,14 @@ body {
   background-repeat: repeat;
 }
 
+@media screen and (max-width: 700px) {
+  body {
+    background: url(about-background-portrait.png);
+    background-size: cover;
+    background-repeat: repeat;
+  }
+}
+
 .about p{
   line-height: 25px;
 }
