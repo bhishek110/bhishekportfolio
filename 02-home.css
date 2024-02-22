@@ -181,6 +181,12 @@ a {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
+@media screen and (max-width: 700px) {
+  .main-container {
+    width: 97%;
+  }
+}
+
 .name-container {
   margin: 60px 0px 30px 30px;
   display: flex;
